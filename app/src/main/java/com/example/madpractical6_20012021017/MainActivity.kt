@@ -1,5 +1,6 @@
 package com.example.madpractical6_20012021017
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,5 +22,8 @@ class MainActivity : AppCompatActivity() {
         myvideoview.requestFocus()
         myvideoview.start()
         val button = findViewById<FloatingActionButton>(R.id.btnid)
+        val intent=Intent(this,youtube::class.java)
+//        intent.putExtra("mainactivity1",msg)
+        startActivity(intent)
     }
 }
