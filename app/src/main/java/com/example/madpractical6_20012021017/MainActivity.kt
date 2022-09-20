@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val mediaController = MediaController(this)
-        val uri: Uri = Uri.parse("android.resource://" + packageName + R.raw.thestoryoflight)
+        val uri: Uri = Uri.parse("android.resource://" + packageName + "/" + R.raw.thestoryoflight)
         val myvideoview = findViewById<VideoView>(R.id.ytview)
         myvideoview.setMediaController(mediaController)
         mediaController.setAnchorView(myvideoview)
